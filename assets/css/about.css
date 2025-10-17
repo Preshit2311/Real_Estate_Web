@@ -1,0 +1,142 @@
+    :root {
+      --primary-color: #00a751;
+      --secondary-color: #f4801e;
+      --light-color: #f8f9fa;
+      --dark-color: #212529;
+    }
+
+    html, body {
+      overflow-x: hidden;   /* prevent horizontal scroll */
+      width: 100%;          /* ensure no extra width */
+    }
+    /* === About Breadcrumb section === */
+    .breadcrumb-section {
+      background: url(/assets/images/about/Breadcrumb-bg01.png) center center / cover no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      height: 400px;
+    }
+
+    .breadcrumb-section h1,
+    .breadcrumb-section .breadcrumb a,
+    .breadcrumb-section .breadcrumb-item {
+      color: var(--light-color);
+    }
+
+    .breadcrumb-item+.breadcrumb-item::before {
+    color: var(--light-color);
+    content: var(--bs-breadcrumb-divider, "|");
+}
+
+    .breadcrumb a:hover {
+      text-decoration: underline;
+      color: var(--secondary-color);
+    }
+
+    /*==== About Section ===*/
+.about-left-image {
+  height: 670px;
+  width: 95% !important;
+  object-fit: cover;
+}
+
+.about-span {
+  color: var(--primary-color) !important;
+}
+
+.about-features i {
+  color: var(--primary-color) !important;
+}
+
+/* Circle container and rotating border */
+.circle-container {
+  background-color: var(--primary-color);
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  top: 40%;
+  right: -3%;
+}
+
+/* Rotating dotted border */
+.rotating-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 5px dotted var(--light-color);
+  border-radius: 50%;
+  animation: rotateBorder 8s linear infinite;
+  z-index: 0;
+}
+
+/* Inner content */
+.circle-content {
+  width: 130px;
+  height: 130px;
+}
+
+/* Animation keyframes */
+@keyframes rotateBorder {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.about-features i {
+  position: absolute;
+  right: -4%;
+  top: 14%;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 20px;
+  color: white !important;
+}
+
+.services-list:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.services-list {
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 20px 30px;
+  font-weight: 600 !important;
+  font-family: var(--heading-font) !important;
+  border-radius: 4px;
+  position: relative;
+  display: block;
+  /* box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15); */
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #4e9525;
+  outline: none !important;
+}
+
+.services-list:hover i {
+  background: orange;
+  color: blue;
+}
+
+.btn-about {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  font-family: var(--heading-font);
+}
+
+.btn-about:hover {
+  background-color: orange !important;
+  color: white !important;
+  font-family: var(--heading-font);
+}

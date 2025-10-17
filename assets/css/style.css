@@ -1,0 +1,532 @@
+:root {
+  --heading-font: "Poppins", sans-serif;
+  --subheading-font: "Urbanist", sans-serif;
+  --primary-color: #00a751;
+  --secondary-color: #f4801e;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+}
+
+/* Base Styles */
+body {
+  font-family: var(--subheading-font);
+  color: var(--dark-color);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font) !important;
+  font-weight: 700 !important;
+}
+
+a {
+  font-family: var(--heading-font) !important;
+}
+
+/* Header Styles */
+.navbar {
+  background-color: var(--primary-color) !important;
+  padding: 0.8rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand h1 {
+  font-size: 2rem;
+}
+
+.nav-item a {
+  color: white !important;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-item a:hover {
+  opacity: 0.8;
+}
+
+.nav-item a.active {
+  font-weight: bold;
+}
+
+/* Social Media Icons */
+.social-media a {
+  text-decoration-line: none !important;
+}
+
+.social-media i {
+  color: #111;
+  background-color: rgb(235, 235, 235);
+  border-radius: 50%;
+  padding: 12px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-media i:hover {
+  color: white;
+  background-color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+/* === navbar === */
+.dropdown-menu a {
+  background-color: #00a751 !important;
+  color: black !important;
+}
+
+/* === Hero Section === */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+/* == btn-hero-1 == */
+.btn-hero-1,
+.btn-hero-2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  background: #183;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: color 0.2s ease-in-out;
+  z-index: 1;
+}
+
+.btn-hero-1::after,
+.btn-hero-2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0%;
+  height: 100%;
+  background: #f4801e;
+  transition: width 0.4s ease-in-out, left 0.4s ease-in-out;
+  z-index: -1;
+}
+
+.btn-hero-1:hover::after,
+.btn-hero-2:hover::after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+.hero-right-image img {
+  transition: transform 0.5s ease;
+}
+
+.hero-right-image:hover img {
+  transform: scale(1.03);
+}
+
+/*==== About Section ===*/
+.about-left-image {
+  height: 670px;
+  width: 95% !important;
+  object-fit: cover;
+}
+
+.about-span {
+  color: var(--primary-color) !important;
+}
+
+.about-features i {
+  color: var(--primary-color) !important;
+}
+
+/* Circle container and rotating border */
+.circle-container {
+  background-color: var(--primary-color);
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  top: 40%;
+  right: -3%;
+}
+
+/* Rotating dotted border */
+.rotating-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 5px dotted var(--light-color);
+  border-radius: 50%;
+  animation: rotateBorder 8s linear infinite;
+  z-index: 0;
+}
+
+/* Inner content */
+.circle-content {
+  width: 130px;
+  height: 130px;
+}
+
+/* Animation keyframes */
+@keyframes rotateBorder {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.about-features i {
+  position: absolute;
+  right: -4%;
+  top: 14%;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 20px;
+  color: white !important;
+}
+
+.services-list:hover {
+  background: var(--primary-color);
+  color: #fff;
+
+}
+
+.services-list {
+  font-size: 17px;
+  margin-bottom: 20px;
+  padding: 20px 30px;
+  font-weight: 600 !important;
+  font-family: var(--heading-font) !important;
+  border-radius: 4px;
+  position: relative;
+  display: block;
+  /* box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15); */
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #4e9525;
+  outline: none !important;
+}
+
+.services-list:hover i {
+  background: orange;
+  color: blue;
+}
+
+.btn-about {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  font-family: var(--heading-font);
+}
+
+.btn-about:hover {
+  background-color: orange !important;
+  color: white !important;
+  font-family: var(--heading-font);
+}
+
+/* === Why Choose Us Section === */
+/* Left: Lottie Animation */
+swiper-container {
+  margin: 50px auto;
+  width: 100%;
+  height: 400px;
+}
+
+swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+swiper-slide:nth-child(1n) {
+  background-image: url(../images/why-choose-us/image.png);
+  background-size: cover;
+}
+
+swiper-slide:nth-child(2n) {
+  background-image: url(../images/why-choose-us/img2.jpg);
+  background-size: cover;
+}
+
+swiper-slide:nth-child(3n) {
+  background-image: url(../images/why-choose-us/img3.jpg);
+  background-size: cover;
+}
+
+swiper-slide:nth-child(4n) {
+  background-image: url(../images/why-choose-us/img4.jpg);
+  background-size: cover;
+}
+
+swiper-slide:nth-child(5n) {
+  background-image: url(../images/why-choose-us/img5.jpg);
+  background-size: cover;
+}
+
+/* Right: Content */
+.parallax-section {
+  background-image: url(../images/image.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 320px;
+}
+
+.parallax-section .overlay {
+  background: #00a7516c;
+  z-index: 0;
+}
+
+.parallax-section .z-1 {
+  z-index: 1;
+}
+
+/*=== Property Cards ===*/
+.property-card {
+  transition: all 0.3s ease;
+  border-radius: 8px !important;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important;
+  padding-bottom: 20px;
+}
+
+.property-card:hover {
+  transform: translateY(-8px);
+}
+
+.price-tag {
+  font-weight: bold;
+  font-size: 1.1rem;
+  background-color: var(--primary-color) !important;
+}
+
+.badge {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.property-features span {
+  font-size: 0.9rem;
+}
+
+.card-footer .btn {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+/* === Location Advantage Section === */
+.location-advantage-section {
+  background-color: #ffffff;
+}
+
+.btn-location {
+  background-color: #00A751;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-location:hover {
+  background-color: #f4801e;
+  color: #fff;
+}
+
+.map-section iframe {
+  width: 100%;
+  height: 390px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Responsive fix */
+@media (max-width: 767px) {
+  .location-left-sec h2 {
+    font-size: 1.75rem;
+  }
+
+  .btn-location {
+    font-size: 1.1rem;
+  }
+}
+
+/*=== Amenities Section ===*/
+.amenity-icon {
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+}
+
+/* Keyframes for bounce effect */
+@keyframes bounce-slight {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(5deg) scale(1.1);
+  }
+}
+.card:hover{
+  transform: translateY(-10px);
+  transition: .4s ease;
+}
+
+/* On card hover, animate amenity icon with bounce */
+.card:hover .amenity-icon {
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+  animation: bounce-slight 0.5s ease forwards;
+}
+
+/* Testimonials (your existing styles) */
+.testimonial-card {
+  max-width: 100%;
+  width: 100%;
+  max-width: 650px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease-in-out;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 40px;
+  height: 40px;
+  background-size: 60%;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.4));
+}
+
+/* === Video Section ===*/
+.btn-video {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-video:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+
+/* === Investment Potential Section === */
+.investment-potential-section {
+/* background: linear-gradient(180deg,rgba(0, 167, 81, 1) 40%, rgba(119, 185, 151, 0.719) 100%); */
+  background-color: var(--primary-color);
+  overflow: hidden;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+}
+
+.investment-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: white;
+  clip-path: ellipse(70% 100% at 50% 100%);
+  z-index: 0;
+}
+
+.investment-visual {
+  background: #fff;
+  border-radius: 20px;
+  max-width: 350px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+/* === Call To Action === */
+.banner-sec {
+  background: linear-gradient(135deg, #00a751, #00e16d);
+}
+
+/* === Contact Section === */
+.contact-info,
+.contact-form {
+  border-radius: 10px !important;
+}
+
+.contact-form .form-control {
+  padding: 0.75rem;
+  border: 1px solid #dee2e6;
+}
+
+.contact-form .form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(0, 167, 81, 0.25);
+}
+
+/* === Footer === */
+.bg-footer {
+  background-color: #000e07ee !important;
+}
+
+.footer a {
+  transition: all 0.3s ease;
+}
+
+.footer a:hover {
+  color: var(--primary-color) !important;
+  padding-left: 5px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  text-decoration-line: none !important;
+}
+
+.social-icons a:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+
+
+
+/* Responsive Adjustments */

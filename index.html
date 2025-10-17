@@ -1,0 +1,1005 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GreenEstate - Property & Land Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!-- External css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <!-- Font Awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- AOS animation cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- Header Section -->
+<header class="sticky-top bg-white" id="main-header">
+  <!-- Top Header (Logo + Contact) -->
+  <div class="container pt-1 pb-2 d-lg-block d-none" id="topHeader">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-md-7 text-center text-md-start mb-3 mb-md-0">
+        <a class="navbar-brand" href="index.html">
+          <div class="logo">
+            <img src="assets/images/logo/green-estate-logo.png" alt="Shivtirth Logo"
+              class="img-fluid w-25" id="mainLogo">
+          </div>
+        </a>
+      </div>
+      <div class="col-md-5 text-center text-md-end">
+        <div class="header-btn">
+          <a href="mailto:info@shivtirth.com" class="text-decoration-none text-success me-5">
+            <i class="fa-solid fa-envelope me-2 text-dark"></i>info@greenestate.com
+          </a>
+          <a href="tel:+919359552289" class="text-decoration-none text-success">
+            <i class="fa-solid fa-phone me-1 text-dark"></i> +91 9359552289
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark d-lg-flex d-none align-items-center"
+    style="background-color: var(--primary-color);">
+    <div class="container-fluid position-relative">
+
+      <!-- Cloned Logo Container (hidden initially) -->
+      <div id="clonedLogoContainer" class="position-absolute start-0 d-none">
+        <img src="assets/images/logo/shivtirth logo main.webp" alt="Cloned Logo"
+          class="img-fluid" style="max-height: 40px;">
+      </div>
+
+      <div class="collapse navbar-collapse justify-content-center sticky-top sticky-lg-top" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0 gap-4 fw-semibold">
+          <li class="nav-item"><a class="nav-link active fw-semibold" href="#">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">PROPERTIES</a>
+            <ul class="dropdown-menu text-white bg-warning">
+              <li><a class="dropdown-item" href="#">Residential</a></li>
+              <li><a class="dropdown-item" href="#">Commercial</a></li>
+              <li><a class="dropdown-item" href="#">Land</a></li>
+              <li><a class="dropdown-item" href="#">Farm Houses</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#amenities">AMENITIES</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">CONTACT US</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">TESTIMONIALS</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+    <!-- offcanvas navbar section start -->
+    <nav class="navbar navbar-expand-lg d-block d-lg-none" style="background-color: gold !important;">
+        <div class="container-fluid d-flex justify-content-between align-items-center d-flex flex-row">
+            <div class="d-flex">
+                <a class="navbar-brand" href="#">
+                    <a href=""><img src="assets/images/logo/Yellow and White Illustrative Real Estate Logo (4).png" alt=""
+                            class="img-fluid shivtirth-logo-main w-25 "></a>
+                </a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+            <button type="button" class="btn-close bg-warning text-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body  bg-success">
+            <ul class="navbar-nav me-auto ms-auto  mb-lg-0 gap-1 fw-semibold  offcanvas-text ">
+                <li class="nav-item border-bottom border-warning pe-0 ps-0">
+                    <a class="nav-link active fw-semibold" aria-current="page" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item border-bottom border-warning pe-0 ps-0 ">
+                    <a class="nav-link" href="./about.html">ABOUT</a>
+                </li>
+                <li class="nav-item dropdown border-bottom border-warning pe-0 ps-0">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        PROPERTIES
+                    </a>
+                </li>
+                <li class="nav-item border-bottom border-warning pe-0 ps-0">
+                    <a class="nav-link" href="#amenities">AMENITIES</a>
+                </li>
+                <li class="nav-item border-bottom border-warning pe-0 ps-0">
+                    <a class="nav-link" href="#contact">CONTACT US</a>
+                </li>
+                <li class="nav-item border-bottom border-warning pe-0 ps-0">
+                    <a class="nav-link" href="#testimonials">TESTIMONIALS</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="offcanvas-footer p-3 border-top ">
+            <div class="d-flex gap-3">
+                <i class="fa-solid fa-phone-volume"></i>
+                <p> +91 9359552289</p>
+            </div>
+            <div class="d-flex gap-3 mt-2">
+                <i class="fa-solid fa-envelope"></i>
+                <p>E-mail - info@greenestate.in</p>
+            </div>
+            <a href="/contact">
+                <button class="btn btn-warning w-100 mt-3">Enquire Now</button>
+            </a>
+        </div>
+    </div>
+    <!-- offcanvas navbar section close -->
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-1 bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Content -->
+                <div class="col-lg-6" data-aos="fade-right" data-aos-once="false" data-aos-mirror="true">
+                    <div class="hero-content p-4 p-lg-5">
+                        <h5 style="color: #F4801E;">Welcome to Green-Estate Farms</h5>
+                        <h2 class="display-4 fw-bold mb-4">Discover Your Piece of Paradise at <span
+                                style="color: #00A751;">Green</span> Farms</h2>
+                        <p class="lead">Nature’s serenity, your future investment — premium farm plots now available.
+                        </p>
+                        <p>
+                            Experience the harmony of nature and modern planning at Green-Estate Farms.
+                            Ideal for weekend homes, organic farming, or long-term investment — your green future starts
+                            here.
+                        </p>
+                        <div class="d-flex flex-column flex-md-row gap-3 mt-5">
+                            <a href="#properties" class="btn btn-hero-1 py-2 rounded-0" data-aos="fade-up"
+                                data-aos-delay="200">Book a Site Visit</a>
+                            <a href="#contact" class="btn btn-hero-2 py-2 rounded-0" data-aos="fade-up"
+                                data-aos-delay="400">Download Brochure</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-once="false" data-aos-mirror="true">
+                    <div class="hero-right-image text-center">
+                        <img src="assets/images/man-green-jacket.webp" alt="Modern property with green surroundings"
+                            class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Modal -->
+    <!-- <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="searchModalLabel">Property Search</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="propertyType" class="form-label">Property Type</label>
+                                <select class="form-select" id="propertyType">
+                                    <option selected>Any Type</option>
+                                    <option>Residential</option>
+                                    <option>Commercial</option>
+                                    <option>Land</option>
+                                    <option>Farm House</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="location" class="form-label">Location</label>
+                                <select class="form-select" id="location">
+                                    <option selected>Any Location</option>
+                                    <option>Houston</option>
+                                    <option>Franklin</option>
+                                    <option>Springfield</option>
+                                    <option>Greenville</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="minPrice" class="form-label">Min Price</label>
+                                <select class="form-select" id="minPrice">
+                                    <option selected>No Min</option>
+                                    <option>$50,000</option>
+                                    <option>$100,000</option>
+                                    <option>$200,000</option>
+                                    <option>$500,000</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="maxPrice" class="form-label">Max Price</label>
+                                <select class="form-select" id="maxPrice">
+                                    <option selected>No Max</option>
+                                    <option>$100,000</option>
+                                    <option>$200,000</option>
+                                    <option>$500,000</option>
+                                    <option>$1,000,000+</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Search Properties</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                <!-- Left Image + Circle -->
+                <div class="col-lg-6 mb-4 mb-lg-0 position-relative d-flex justify-content-center align-items-center"
+                    data-aos="fade-right">
+                    <img src="assets/images/propert-2.jpg" alt="Our team of real estate agents"
+                        class="img-fluid rounded about-left-image">
+
+                    <div class="circle-container text-white text-center d-lg-block d-none" data-aos="zoom-in"
+                        data-aos-delay="200">
+                        <div class="rotating-border"></div>
+                        <div class="circle-content d-flex flex-column justify-content-center align-items-center">
+                            <h2 class="fs-4 text-black fw-bold mb-1">30+</h2>
+                            <span class="fw-bold fs-6">Years of <br>Experience</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="ps-lg-5">
+                        <h2 class="display-5 fw-bold mb-4 fs-2">About <span class="about-span">Green-Estate Farms</span>
+                        </h2>
+                        <h4 data-aos="fade-up" data-aos-delay="100">Rooted in Nature, Grown with Trust</h4>
+                        <p class="lead" data-aos="fade-up" data-aos-delay="200">
+                            Located amidst lush greenery and scenic landscapes, Green-Estate Farms offers legally clear,
+                            well-demarcated agricultural plots designed for mindful living.
+                        </p>
+                        <div class="about-features mt-4 p-2">
+                            <div class="mb-3 shadow" data-aos="fade-up" data-aos-delay="300">
+                                <a href="#" class="services-list nav-link">
+                                    Legally Clear & Demarcated Plots
+                                    <i class="fa-solid fa-arrow-right text-white"></i>
+                                </a>
+                            </div>
+                            <div class="mb-3 shadow" data-aos="fade-up" data-aos-delay="400">
+                                <a href="#" class="services-list nav-link">
+                                    Surrounded by Scenic Green Landscapes
+                                    <i class="fa-solid fa-arrow-right text-white"></i>
+                                </a>
+                            </div>
+                            <div class="mb-3 shadow" data-aos="fade-up" data-aos-delay="500">
+                                <a href="#" class="services-list nav-link">
+                                    Ideal for Retreats & Long-Term Investment
+                                    <i class="fa-solid fa-arrow-right text-white"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-about mt-4 px-4 py-2 fw-bold rounded-0 btn-sm" data-aos="zoom-in"
+                            data-aos-delay="600">
+                            Learn More About Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose" class="parallax-section text-white position-relative py-5">
+        <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
+        <div class="container position-relative z-1">
+            <div class="row align-items-center">
+
+                <!-- Left: Swiper / Animation -->
+                <div class="col-lg-6 mb-4 mb-lg-0 text-center" data-aos="fade-right">
+                    <swiper-container init="false" class="mySwiper">
+                        <swiper-slide></swiper-slide>
+                        <swiper-slide></swiper-slide>
+                        <swiper-slide></swiper-slide>
+                        <swiper-slide></swiper-slide>
+                        <swiper-slide></swiper-slide>
+                    </swiper-container>
+                </div>
+
+                <!-- Right: Feature List -->
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="150">
+                    <ul class="list-unstyled fs-6 lh-lg">
+                        <li class="mb-3">
+                            <i class="fa-solid fa-circle-check text-warning me-2"></i>
+                            <span class="no-wrap-mobile" style="font-size: 18px;">
+                                Legally clear agricultural plots with 7/12 extract
+                            </span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fa-solid fa-circle-check text-warning me-2"></i>
+                            <span class="no-wrap-mobile fs-5">
+                                Strategically located near major highways and tourist attractions
+                            </span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fa-solid fa-circle-check text-warning me-2"></i>
+                            <span class="no-wrap-mobile fs-5">
+                                Compound fencing with proper road and water access
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Advantage Section -->
+    <section id="location-advantage" class="location-advantage-section bg-white py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <!-- Left Content -->
+                <div class="col-lg-6">
+                    <div class="location-left-sec lh-lg" data-aos="fade-right">
+                        <div class="d-flex align-items-center mb-3">
+                            <h2 class="mb-0 me-3">Location Advantage</h2>
+                            <dotlottie-player
+                                src="https://lottie.host/f8feffad-e938-474d-ac4c-458a69d4fe4b/RiMeOum8mW.lottie"
+                                background="transparent" speed="1" style="width: 80px; height: 80px" loop autoplay>
+                            </dotlottie-player>
+                        </div>
+                        <h4 class="fw-semibold mb-3">Strategically Located for Growth and Getaway</h4>
+                        <p class="mb-4">
+                            Shivtirth Farms is situated just [XX] km from [Nearest City/Highway], offering a perfect
+                            blend
+                            of nature and convenience. With proximity to major highways, tourist attractions, and
+                            urban connectivity, your farmland is never too far from home or future development.
+                        </p>
+                        <button class="btn btn-location w-100 fw-bold fs-5">Explore Location</button>
+                    </div>
+                </div>
+
+                <!-- Right: Google Map -->
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="map-section shadow rounded overflow-hidden">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215256018976!2d-73.9878449245257!3d40.7484409713896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1623251157714!5m2!1sen!2sus"
+                            width="100%" height="390" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-down">
+                <h2 class="display-5 fw-bold">Amenities & Infrastructure</h2>
+                <p class="lead text-muted">Modern Amenities, Rural Charm</p>
+                <div class="border-bottom mx-auto"
+                    style="width: 100px; height: 3px; background-color: var(--primary-color);"></div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Repeat this block for each amenity -->
+                <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="100">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div
+                                class="amenity-icon bg-success bg-opacity-10 text-success rounded-circle p-3 mb-3 mx-auto">
+                                <i class="fa-solid fa-water fa-2x"></i>
+                            </div>
+                            <h5 class="card-title">Water pipeline access</h5>
+                            <p class="card-text text-muted">Legally clear agricultural plots with 7/12 extract</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="200">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div
+                                class="amenity-icon bg-success bg-opacity-10 text-success rounded-circle p-3 mb-3 mx-auto">
+                                <i class="fa-solid fa-road fa-2x"></i>
+                            </div>
+                            <h5 class="card-title">Wide internal roads</h5>
+                            <p class="card-text text-muted">Strategically located near city/highway/tourist spots</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="300">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div
+                                class="amenity-icon bg-success bg-opacity-10 text-success rounded-circle p-3 mb-3 mx-auto">
+                                <i class="fa-solid fa-tree fa-2x"></i>
+                            </div>
+                            <h5 class="card-title">Tree plantation and green zone</h5>
+                            <p class="card-text text-muted">Compound fencing with road and water access</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="400">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div
+                                class="amenity-icon bg-success bg-opacity-10 text-success rounded-circle p-3 mb-3 mx-auto">
+                                <i class="fa-solid fa-shield-halved fa-2x"></i>
+                            </div>
+                            <h5 class="card-title">Gated entry & security</h5>
+                            <p class="card-text text-muted">Secure and peaceful living environment</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="500">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div
+                                class="amenity-icon bg-success bg-opacity-10 text-success rounded-circle p-3 mb-3 mx-auto">
+                                <i class="fa-solid fa-solar-panel fa-2x"></i>
+                            </div>
+                            <h5 class="card-title">Solar lighting infrastructure</h5>
+                            <p class="card-text text-muted">Ideal for organic farming, resorts, or second homes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="600">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div
+                                class="amenity-icon bg-success bg-opacity-10 text-success rounded-circle p-3 mb-3 mx-auto">
+                                <i class="fa-solid fa-gavel fa-2x"></i>
+                            </div>
+                            <h5 class="card-title">Legal assistance for ownership</h5>
+                            <p class="card-text text-muted">Expert documentation & registration help</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 3D Property View Section -->
+    <section class="video-section bg-white border">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Animation Left -->
+                <div class="col-lg-6  mb-lg-0">
+                    <div class="video-left text-center">
+                        <dotlottie-player
+                            src="https://lottie.host/6db70f11-e4fd-4592-b070-52cfb2df65a7/XcIfU5hklR.lottie"
+                            background="transparent" speed="1" style="width: 100%; height: 450px" loop autoplay>
+                        </dotlottie-player>
+                    </div>
+                </div>
+
+                <!-- Content Right -->
+                <div class="col-lg-6">
+                    <div class="video-right px-3 px-lg-5 lh-lg">
+                        <h2 class=" fa-2x mb-3 text-success">3D Plot Layout & Master Plan</h2>
+                        <h3 class="mb-3">Well-Structured Layout for a Better Life</h3>
+                        <p class="fs-6 mb-4">
+                            Explore a thoughtfully designed layout with demarcated plots, internal roads, and natural
+                            landscaping. Each plot is Vastu-compliant and ready for development.
+
+                        </p>
+                        <h4 class="fw-semibold mb-3">Visualize your dream home with clarity and confidence.</h4>
+                        <a href="#" class="btn btn-video btn-lg px-4 rounded-0 pt-2">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section id="properties" class="py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="display-5 fw-bold">Featured Properties</h2>
+                <p class="lead text-muted">Your Farm. Your Freedom. Your Future.</p>
+                <div class="border-bottom mx-auto" style="width: 100px; height: 3px; background-color:#00A751">
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Property 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="property-card card h-100 border-0 shadow-sm overflow-hidden">
+                        <div class="position-relative">
+                            <img src="assets/images/view-3d-house-model_23-2150761014.png" class="card-img-top"
+                                alt="Modern house with garden">
+                            <div class="badge bg-success position-absolute top-0 end-0 m-3">Featured</div>
+                            <div class="price-tag position-absolute bottom-0 start-0  text-white p-2 px-3">$560,000
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Modern Family Home</h5>
+                            <p class="card-text text-muted">
+                                <i class="fas fa-map-marker-alt text-success me-2"></i>Franklin, AMT
+                            </p>
+                            <div
+                                class="property-features d-flex justify-content-between border-top border-bottom py-2 mb-3">
+                                <span><i class="fas fa-bed text-success me-1"></i> 4 Beds</span>
+                                <span><i class="fas fa-bath text-success me-1"></i> 3 Baths</span>
+                                <span><i class="fas fa-ruler-combined text-success me-1"></i> 2,500 sq.ft</span>
+                            </div>
+                            <p class="card-text">Legally clear agricultural plots with 7/12 extract</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="#" class="btn btn-success w-100">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="property-card card h-100 border-0 shadow-sm overflow-hidden">
+                        <div class="position-relative">
+                            <img src="assets/images/view-3d-house-model_23-2150761014.png" class="card-img-top"
+                                alt="Commercial property">
+                            <div class="badge bg-warning position-absolute top-0 end-0 m-3">Commercial</div>
+                            <div class="price-tag position-absolute bottom-0 start-0  text-white p-2 px-3">
+                                $1,200,000
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Commercial Space</h5>
+                            <p class="card-text text-muted">
+                                <i class="fas fa-map-marker-alt text-success me-2"></i>Houston, TX
+                            </p>
+                            <div
+                                class="property-features d-flex justify-content-between border-top border-bottom py-2 mb-3">
+                                <span><i class="fas fa-building text-success me-1"></i> 5 Floors</span>
+                                <span><i class="fas fa-warehouse text-success me-1"></i> 10 Units</span>
+                                <span><i class="fas fa-ruler-combined text-success me-1"></i> 15,000 sq.ft</span>
+                            </div>
+                            <p class="card-text">Strategically located near [mention city/highway/tourist spots]</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="#" class="btn btn-success w-100">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="property-card card h-100 border-0 shadow-sm overflow-hidden">
+                        <div class="position-relative">
+                            <img src="assets/images/view-3d-house-model_23-2150761014.png" class="card-img-top"
+                                alt="Farm house with land">
+                            <div class="badge bg-info position-absolute top-0 end-0 m-3">Farm Land</div>
+                            <div class="price-tag position-absolute bottom-0 start-0  text-white p-2 px-3">$350,000
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Farm House with Land</h5>
+                            <p class="card-text text-muted">
+                                <i class="fas fa-map-marker-alt text-success me-2"></i>Greenville, SC
+                            </p>
+                            <div
+                                class="property-features d-flex justify-content-between border-top border-bottom py-2 mb-3">
+                                <span><i class="fas fa-home text-success me-1"></i> 3 Beds</span>
+                                <span><i class="fas fa-tree text-success me-1"></i> 10 Acres</span>
+                                <span><i class="fas fa-tractor text-success me-1"></i> Barn</span>
+                            </div>
+                            <p class="card-text">Compound fencing with road and water access</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="#" class="btn  w-100">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-outline-success btn-lg px-4">View All Properties</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section py-5 bg-warning">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+
+                <!-- Video Left -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="video-left text-center">
+                        <iframe width="100%" height="400px" allowFullScreen="true"
+                            allow="accelerometer; magnetometer; gyroscope"
+                            style="display:block; margin:20px auto; border:0 none; max-width:880px;"
+                            src="https://panoraven.com/en/embed/KqPYChm04t"></iframe>
+                    </div>
+                </div>
+
+                <!-- Video Right -->
+                <div class="col-lg-6">
+                    <div class="video-right px-3 px-lg-5 lh-lg">
+                        <h2 class="fw-bold mb-3 text-success">Virtual Tour</h2>
+                        <h3 class="fw-bold mb-3">Explore our 360° View</h3>
+                        <p class="w-100 w-lg-75 fs-6 mb-4">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quisquam illo nam aliquid
+                            quibusdam in fuga similique magnam enim illum? Deserunt aspernatur praesentium quos
+                            voluptatibus?
+                        </p>
+                        <h4 class="fw-semibold mb-3">See your future home from every angle.</h4>
+                        <a href="#" class="btn btn-video btn-lg px-4  rounded-0 pt-2">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="bg-light py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="display-5 fw-bold">What Our Clients Say</h2>
+                <p class="lead text-muted">Hear from our satisfied customers</p>
+                <div class="border-bottom mx-auto"
+                    style="width: 100px; height: 3px; background-color: var(--primary-color);"></div>
+            </div>
+
+            <div class="carousel slide" id="testimonialCarousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- Testimonial 1 -->
+                    <div class="carousel-item active">
+                        <div class="testimonial-card card text-center mx-auto p-4 p-md-5">
+                            <img src="assets/images/businessman-realstate.png" alt="Sarah Johnson"
+                                class="rounded-circle mb-4 d-block mx-auto" width="100">
+                            <h5>Sarah Johnson</h5>
+                            <p class="text-muted">Property Investor</p>
+                            <p class="fst-italic">"Shivtirth Farms exceeded my expectations. Truly a gem for smart
+                                investors."</p>
+                            <div class="text-warning mb-2">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="carousel-item">
+                        <div class="testimonial-card card text-center mx-auto p-4 p-md-5">
+                            <img src="assets/images/businessman-realstate.png" alt="Michael Chen"
+                                class="rounded-circle mb-4 d-block mx-auto" width="100">
+                            <h5>Michael Chen</h5>
+                            <p class="text-muted">Home Owner</p>
+                            <p class="fst-italic">"The process was smooth and the staff was very supportive. Highly
+                                recommended."</p>
+                            <div class="text-warning mb-2">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="carousel-item">
+                        <div class="testimonial-card card text-center mx-auto p-4 p-md-5">
+                            <img src="assets/images/businessman-realstate.png" alt="Robert & Emily Wilson"
+                                class="rounded-circle mb-4 d-block mx-auto" width="100">
+                            <h5>Robert & Emily Wilson</h5>
+                            <p class="text-muted">Land Buyers</p>
+                            <p class="fst-italic">"Investing in Shivtirth Farms was the best decision for our future."
+                            </p>
+                            <div class="text-warning mb-2">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-success rounded-circle"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-success rounded-circle"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Investment Potential Section -->
+    <section class="investment-potential-section text-white position-relative py-5">
+        <div class="container position-relative z-1">
+            <div class="row align-items-center">
+
+                <!-- Left: Content -->
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h2 class="display-5 fw-bold mb-4">Land that Grows in Value &amp; Purpose</h2>
+                    <p class="lead">
+                        Agricultural land is one of the <span class="text-warning fw-semibold">safest</span> and <span
+                            class="text-warning fw-semibold">fastest-appreciating</span> assets.
+                    </p>
+                    <p>
+                        With <strong>Shivtirth Farms’ prime location</strong> and upcoming development potential, your
+                        investment stands the test of time.
+                    </p>
+                    <div class="alert alert-light mt-4 shadow-sm fw-semibold" role="alert">
+                        📈 <em>Buy now at early-bird prices — <strong>Limited plots available!</strong></em>
+                    </div>
+                </div>
+
+                <!-- Right: Visual Element -->
+                <div class="col-lg-6 text-center">
+                    <div class="investment-visual bg-light p-4 rounded-4 shadow-lg position-relative">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3388/3388642.png" alt="Investment Icon"
+                            class="mb-4" width="80" />
+                        <h5 class="fw-bold text-dark">Your Investment, Your Legacy</h5>
+                        <p class="text-muted">Farmland ownership is not just safe — it grows in value while giving back
+                            to nature.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom wave transition -->
+        <div class="investment-wave"></div>
+    </section>
+
+    <!-- Call To Action Section -->
+    <section class="py-5 text-white banner-sec mb-5" style="background: var(--primary-color);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <h2 class="display-5 fw-bold mb-3">Ready to Visit Green-Estate Farms?</h2>
+                    <p class="lead mb-4">Book a free site visit today and see your future farmland</p>
+
+                    <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center gap-3">
+                        <a href="mailto:info@shivtirth.com"
+                            class="text-decoration-none text-white d-flex align-items-center">
+                            <i class="fa-solid fa-envelope me-2"></i> info@greenestate.com
+                        </a>
+                        <a href="tel:+919359552289" class="text-decoration-none text-white d-flex align-items-center">
+                            <i class="fa-solid fa-phone me-2"></i> +91 9359552289
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-lg-end text-start">
+                    <a href="#contact" class="btn btn-light btn-lg">Get a Free Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- <section id="contact" class="py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="display-5 fw-bold">Contact Us</h2>
+                <p class="lead text-muted">Get in touch with our team</p>
+                <div class="border-bottom mx-auto"
+                    style="width: 100px; height: 3px; background-color: var(--primary-color);"></div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="contact-info card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 p-lg-5">
+                            <h3 class="mb-4">Our Office</h3>
+
+                            <div class="d-flex mb-4">
+                                <div class="flex-shrink-0 text-success me-3">
+                                    <i class="fas fa-map-marker-alt fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Address</h5>
+                                    <p class="mb-0">123 Property Lane, Real Estate District<br>New York, NY 10001</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex mb-4">
+                                <div class="flex-shrink-0 text-success me-3">
+                                    <i class="fas fa-phone-alt fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Phone</h5>
+                                    <p class="mb-0">+1 (555) 123-4567<br>+1 (555) 765-4321</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex mb-4">
+                                <div class="flex-shrink-0 text-success me-3">
+                                    <i class="fas fa-envelope fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Email</h5>
+                                    <p class="mb-0">info@greenestate.com<br>sales@greenestate.com</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 text-success me-3">
+                                    <i class="fas fa-clock fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Working Hours</h5>
+                                    <p class="mb-0">Monday - Friday: 9am - 6pm<br>Saturday: 10am - 4pm<br>Sunday: Closed
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="contact-form card border-0 shadow-sm">
+                        <div class="card-body p-4 p-lg-5">
+                            <h3 class="mb-4">Send Us a Message</h3>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="phone" class="form-label">Phone</label>
+                                        <input type="tel" class="form-control" id="phone">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="subject" class="form-label">Subject</label>
+                                        <select class="form-select" id="subject">
+                                            <option selected>General Inquiry</option>
+                                            <option>Property Listing</option>
+                                            <option>Schedule Viewing</option>
+                                            <option>Investment Advice</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-success px-4 py-2">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer section-->
+    <footer class="bg-footer  text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase mb-4"> <span style="color: #00A751;">Green</span> Farms</h5>
+                    <p>Your trusted partner in property and land investments. We help you find the perfect property
+                        that
+                        meets your needs and budget.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#about" class="text-white text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="#properties" class="text-white text-decoration-none">Properties</a>
+                        </li>
+                        <li class="mb-2"><a href="#amenities" class="text-white text-decoration-none">Amenities</a>
+                        </li>
+                        <li class="mb-2"><a href="#testimonials"
+                                class="text-white text-decoration-none">Testimonials</a></li>
+                        <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase mb-4">Property Types</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Residential</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Commercial</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Land</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Farm Houses</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Luxury Villas</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Investment Properties</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase mb-4">Newsletter</h5>
+                    <p>Subscribe to our newsletter for the latest property updates and investment tips.</p>
+                    <form class="mt-4">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email">
+                            <button class="btn btn-success" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <hr class="mt-4 mb-4">
+
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Green-Estate. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
+                        <a href="#" class="text-white text-decoration-none">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+    <!-- off Canvas Navbar -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.offcanvas a.nav-link').forEach(function (element) {
+                element.addEventListener('click', function () {
+                    const offcanvasElement = document.querySelector('.offcanvas.show');
+                    const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
+                    if (bsOffcanvas) {
+                        bsOffcanvas.hide();
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- Swiper js Slider for why choose us section -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <!-- Lottiefy Animation dotlottie-player-->
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+    <!-- AOS Animation Library -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/javascript/main.js"></script> <!-- Your combined JS file -->
+
+</body>
+
+</html>

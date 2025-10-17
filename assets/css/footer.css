@@ -1,0 +1,60 @@
+:root {
+  --heading-font: "Poppins", sans-serif;
+  --subheading-font: "Urbanist", sans-serif;
+  --primary-color: #00a751;
+  --secondary-color: #f4801e;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+}
+
+/* Base Styles */
+body {
+  font-family: var(--subheading-font);
+  color: var(--dark-color);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font) !important;
+  font-weight: 700 !important;
+}
+
+a {
+  font-family: var(--heading-font) !important;
+}
+
+/* === Footer === */
+.bg-footer {
+  background-color: #000e07ee !important;
+}
+
+.footer a {
+  transition: all 0.3s ease;
+}
+
+.footer a:hover {
+  color: var(--primary-color) !important;
+  padding-left: 5px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  text-decoration-line: none !important;
+}
+
+.social-icons a:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-3px);
+}
